@@ -10,7 +10,7 @@
 <body class = "center">
     <p class = "center header-banner">
         Matthew Taylor
-        (Logo Goes Here)
+        <a href="index.html">(Logo Goes Here)</a>
         Full Stack Developer
     </p>
     <p class = "nav-banner">
@@ -18,5 +18,19 @@
         <a class = "center" href="projects.html">Portfolio</a>
         <a class = "right" href="contact-me.html">Contact Me</a>
     </p>
+    <form action="mailto:mt3dmodeler@gmail.com" enctype="text/plain">
+        <label for="name"><strong>Your Name:</strong></label>
+        <input type="text" id="name" name="Name" value=""><br>
+        <br>
+        <label for="email"><strong>Your Email:</strong></label>
+        <input type="email" id="email" name="Email" value=""><br>
+        <br>
+        <label for="date"><strong>Current Date:</strong></label>
+        <input type="date" id="date" name="Date" value=""><br>
+        <br>
+        <label for="text"><strong>Your Message</strong></label><br>
+        <textarea id="text" name="Message" rows="8" cols="80"></textarea><br>
+        <input type="submit" name="submit" value="Send Message">
+      </form>
 </body>
 </html>
