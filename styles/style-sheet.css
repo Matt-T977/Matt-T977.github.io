@@ -118,6 +118,10 @@ a:active{
     padding: 50px;
     margin: 22px;
 }
+
+.project-text {
+    padding: 50px;
+}
 .text-block {
     display: grid;
     place-content: center;
