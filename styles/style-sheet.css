@@ -1,11 +1,19 @@
 body {
     background-color: #393E46; 
     /* color: #EEEEEE; */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
 .grid-container {
+    display: grid;
+    grid-template-columns: auto 600px 600px 600px auto;
+    grid-template-rows: 300px 40px 450px 450px 450px 450px 450px 450px 40px;
+    background-color: #393E46;
+    margin: -10px;
+}
+
+.grid-project-container {
     display: grid;
     grid-template-columns: auto 600px 600px 600px auto;
     grid-template-rows: 300px 40px 450px 450px 40px;
@@ -15,7 +23,6 @@ body {
 
 .grid-item {
     text-align: center;
-    padding: 20px;
     font-size: 30px;
 }
 
@@ -27,17 +34,16 @@ body {
 
 .header-banner {
     background-color: #212429;
-    /* color: #AAD8D3; */
+    color: #AAD8D3;
     padding-top: 50px;
     padding-bottom: 100px;
-    /* margin-left: -75px;
-    margin-right: -75px;
-    margin-top: -75px; */
     font-size: 48px;
 }
 
 .nav-banner {
     background-color: #AAD8D3;
+    border: none;
+    transition-duration: .3s;
     /* padding-top: 20px;
     padding-bottom: 20px;
     margin-left: -75px;
@@ -45,13 +51,25 @@ body {
     margin-top: -75px; */
 }
 
+.nav-button:hover {
+    background-color: #00ADB5;
+    cursor:pointer
+}
+
+.nav-text {
+    color: #393E46;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .project {
     background-color: #00ADB5;
     border-radius: 25px;
-    height: 400px;
-    width: 500px;
+    height: 325px;
+    width: 550px;
+    margin-top: 25px;
     padding: 5px;
-    box-shadow: 10px 10px 5px #212429
+    box-shadow: 10px 10px 5px #212429;
 }
 
 .project-image {
@@ -66,6 +84,7 @@ body {
     border-radius: 25px;
     width: 500px;
     height: 900px;
+    margin-top: 25px;
     padding: 5px;
     box-shadow: 10px 10px 5px #212429
 }
@@ -77,16 +96,27 @@ body {
 }
 
 .about-section {
-    display: grid;
     grid-column: 3 / 5;
     grid-row: 3 / 5;
-    place-content: center;
+}
+
+.about-text {
+    padding: 50px;
+    margin: 22px;
 }
 .text-block {
+    display: grid;
+    place-content: center;
     background-color: #00ADB5;
     color: #EEEEEE;
+    font-size: 30px;
     border-radius: 25px;
     margin: 18px;
     box-shadow: 10px 10px 5px #212429;
     
+}
+
+
+.contact-form {
+    font-size: 24px;
 }
